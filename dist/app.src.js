@@ -19,8 +19,6 @@
         var bar_x_term;
         var bar_y_term;
         var radius = 0;
-        var deltarad = 0;
-        var shockwave = 0;
         var bar_width;
         /*global Image*/
 	    var imageObj = new Image();
@@ -78,7 +76,7 @@
 		bar_x_term = center_x + Math.cos(rads * i + rot) * (radius + bar_height);
 		bar_y_term = center_y + Math.sin(rads * i + rot) * (radius + bar_height);
 						
-	//	ctx.save();
+		ctx.save();
 					
 		var lineColor = "rgb(" + (fbc_array[i]).toString() + ", " + 255 + ", " + 255 + ")";
 						
@@ -94,13 +92,7 @@
 					
 		intensity += bar_height;
 	        }
-	        
 	        center_x = canvas.width / 2;// - (react_x * 0.007);
 	        center_y = canvas.height / 2;// - (react_y * 0.007);
-	        
-	       
-            
-            if(imageObj)
-                ctx.drawImage(imageObj, 69, 50); //load 안됐을땐?
             window.requestAnimationFrame(draw);
         }
