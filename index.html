@@ -5,20 +5,22 @@
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="icon" type="image/png" href="favicon.png" sizes="192x192">
         <link rel="apple-touch-icon" sizes="180x180" href="favicon_apple.png">
-        <title>2017 Happy Birthday iori!</title>
-        <script>
-             screen.width <= 800 ? window.location = "m_index.html":"";
-        </script>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-            }
-        </style>
-        <script async src="dist/app.src.js"></script>
+        <title>Audio Visualizer</title>
+        <link rel="stylesheet" href="dist/style.css">
+        <script async src="dist/app.js"></script>
     </head>
     <body>
-        <canvas id="iori_render"></canvas>
+        <div id="container">
+            <div class="description">
+                <div class="album-image"></div>
+                <div class="ds">
+                    <div class="title">Sentimental Venus</div>
+                    <div class="artist">미나세 이오리, 에밀리 스튜어트, 마카베 미즈키, 모모세 리오</div>
+                    <div class="album">LIVE THE@TER PERFORMANCE 05</div>
+                </div>
+            </div>
+            <canvas id="iori_render" width="854" height="480"></canvas>
+            <!--<div id="cover"></div>-->
+        </div>
     </body>
 </html>

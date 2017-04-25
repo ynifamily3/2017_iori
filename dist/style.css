@@ -1,0 +1,68 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+div {
+    margin:0;
+    padding:0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid #f19ec2;
+}
+
+#container {
+    position:relative;
+    width:854px;
+    height:480px;
+}
+
+#cover {
+    position:absolute;
+    background-image:url(../assets/playbutton.png);
+    width:330px;
+    height:330px;
+    left:280px;
+    top:60px;
+}
+
+
+.description {
+    position:absolute;
+    left:10px;
+    bottom:10px;
+    font-family:'Malgun Gothic',sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 834px;
+    height: 100px;
+    color: white;
+    text-shadow: 2px 2px 20px #ffeffa, 0 0 25px #ffedf9, 0 0 5px #6b505c;
+}
+
+.ds {
+    width: 834px;
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 33px;
+}
+
+.description > .album-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-image:url(../assets/cover.jpg);
+    margin-right: 10px;
+}
+
+::selection{
+    background: #f19ec2;
+    color: #ffffff;
+}
